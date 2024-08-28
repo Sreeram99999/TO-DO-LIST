@@ -1,0 +1,43 @@
+/* Style for the table */
+table {
+    width: 50%;
+    margin: 20px auto; /* Center the table horizontally */
+    border-collapse: collapse;
+    border: 1px solid #ccc; /* Border for the table */
+    text-transform: uppercase;
+}
+
+/* Style for table rows */
+tr {
+    border-bottom: 1px solid #ddd; /* Border between rows */
+}
+
+/* Style for table cells */
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style for table headings */
+th {
+    background-color: #f2f2f2; /* Background color for heading row */
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Border under heading row */
+}
+
+/* Style for the h1 heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Optional: Style for links */
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

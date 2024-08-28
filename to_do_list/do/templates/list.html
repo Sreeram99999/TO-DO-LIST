@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<main>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+            <input type="text" name="search">
+            <button>search</button>
+        </div>
+    </form>
+    <section class="task-list-section">
+        <h1>Task List</h1>
+        <div class="task-list">
+            {% for task in data %}
+            {% if task.mark == 0 %}
+            <div class="task-item">
+                <a id="a" href="{% url 'details' task.id %}">
+                    <span class="task-name">{{ task }}</span>   
+                </a>
+                <div class="task-actions">
+                    <a href="{% url 'mark' task.id %}"><i class="fa-solid fa-check"></i></a>
+                    <a href="{% url 'edit' task.id %}"><i class="fa-regular fa-pen-to-square"></i></a>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+</main>
+    
+{% endblock content %}

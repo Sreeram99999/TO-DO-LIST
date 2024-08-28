@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<main>
+    <section class="todo-section">
+        <h1>TO DO LIST</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="input-group">
+                <label for="task">Task</label>
+                <input type="text" id="task" name="task" placeholder="Add the task you're going to do..." required>
+            </div>
+            <div class="input-group">
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" placeholder="Description" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+    
+{% endblock content %}

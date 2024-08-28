@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    <div class="task-details">
+        <h2>Task Details</h2>
+        <div class="task-info">
+            <p class="wi"><strong>Task:</strong> {{ data.Task }}</p>
+            <p class="description-text"><strong>Description:</strong>{{ data.Desc }}</p>
+        </div>
+        <a href="{% url 'edit' data.id %}"><button class="edit-button">Edit</button></a>
+    </div>
+{% endblock content %}
