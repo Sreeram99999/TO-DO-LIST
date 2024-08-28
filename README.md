@@ -12,8 +12,8 @@ Features:
 
 Installation:
 Clone the Repository:
-  git clone https://github.com/yourusername/your-repo-name.git
-  cd your-repo-name
+  git clone https://github.com/Sreeram99999/TO-DO-LIST.git
+  cd TO-DO-LIST
   
 Create a Virtual Environment:
   python3 -m venv venv
