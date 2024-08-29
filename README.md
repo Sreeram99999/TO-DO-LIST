@@ -25,9 +25,7 @@ Create a Superuser (for Django Admin):
 Run the Development Server:
   python manage.py runserver
 
-Access the Application:
-    Visit http://127.0.0.1:8000/ in your web browser to access the To-Do List application.
-    Visit http://127.0.0.1:8000/admin/ to access the Django admin panel.
+
     
 Usage:
     Adding Tasks:
